@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% from '_renderform.html' import render_field %}
+
+{% block contant %}
+    <h1>Login Page</h1>
+    <form action="{{url_for('login.login_form')}}" method="POST">
+        {{ form.csrf_token }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.submit) }}
+    </form>
+    <a href="{{url_for('registre.registre_form')}}">Registre Page</a>
+{% endblock contant %}

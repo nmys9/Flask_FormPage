@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block contant %}
+    <h1>Info New User</h1>
+    {% if name and email %}
+        <p> {{name}} </p>
+        <p> {{email}} </p>
+    {% endif %}
+{% endblock contant %}
