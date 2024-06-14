@@ -40,6 +40,9 @@ source ./venv/bin/activate
 ```cmd
 git clone https://github.com/nmys9/Flask_FormPage.git
 ```
+```cmd
+cd Flask_FormPage
+```
 
 - install all Flask_FormPage dependencies 
 
